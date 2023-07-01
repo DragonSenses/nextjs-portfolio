@@ -123,3 +123,19 @@ export default function RootLayout({ children }) {
   )
 }
 ```
+
+# Create Components
+
+Let's make the `Header` component. Under `/app`, create file `Header.js`.
+
+Type `rfc` to create a React Functional Component in VSCode using the *ES7+ React/Redux/React-Native snippets* extension.
+
+```js
+import React from 'react';
+
+export default function Header() {
+  return (
+    <div>Header</div>
+  )
+}
+```
