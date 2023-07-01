@@ -71,6 +71,10 @@ To this:
 
 [Installing Tailwind CSS with Next.js](https://tailwindcss.com/docs/guides/nextjs), follow the steps in the documentation if TailwindCSS still isn't working properly. The first step is already done.
 
+## Next.js Project Structure
+
+[Project Structure](https://nextjs.org/docs/getting-started/project-structure).
+
 ## Start the Build Process
 
 ```sh
@@ -91,6 +95,31 @@ export default function Home() {
 }
 ```
 
-# Next.js Project Structure
+### Install icons
 
-[Project Structure](https://nextjs.org/docs/getting-started/project-structure).
+To use the icons at [Font Awesome Icons (free)](https://fontawesome.com/search?m=free&o=r), we need to do some set-up.
+
+Going to use `<head>` tag to import [Font Awesome CDN](https://cdnjs.com/libraries/font-awesome) package, click the `</>` icon to copy the `<link>` tag. Paste it inside the `<head>`.
+
+- One change: have to capitalize the O in Origin and P in Policy
+
+```js
+<link rel="stylesheet" href="..." crossOrigin="anonymous" referrerPolicy="no-referrer" />
+```
+
+In `layout.js`,
+
+```js
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+
+      <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+      </head>
+
+      <body className={inter.className}>{children}</body>
+    </html>
+  )
+}
+```
