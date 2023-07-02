@@ -81,6 +81,25 @@ To this:
 </div>
 ```
 
+### Text Shadow support to Tailwind CSS
+
+[How to add Text Shadow](https://www.hyperui.dev/blog/text-shadow-with-tailwindcss).
+
+Wanted to convert this:
+
+```css
+  text-shadow: 0.03em 0.03em 0 rgb(0, 255, 213),
+    0.06em 0.06em 0 rgb(154, 192, 18),
+    0.09em 0.09em 0 rgb(226, 143, 87),
+    0.11em 0.11em 0 rgb(161, 24, 127);
+```
+
+So will use arbitrary properties here
+
+```js
+'[text-shadow:_0.03em_0.03em_0_rgb(0_255_213),_0.06em_0.06em_0_rgb(154_192_18),_0.09em_0.09em_0_rgb(226_143_87),_0.11em_0.11em_0_rgb(161_24_127)]'
+```
+
 ## Next.js Project Structure
 
 [Project Structure](https://nextjs.org/docs/getting-started/project-structure).
