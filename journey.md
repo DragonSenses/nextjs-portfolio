@@ -71,6 +71,16 @@ To this:
 
 [Installing Tailwind CSS with Next.js](https://tailwindcss.com/docs/guides/nextjs), follow the steps in the documentation if TailwindCSS still isn't working properly. The first step is already done.
 
+### Cool TailwindCSS feature -> Arbitrary Properties
+
+[Arbitrary Properties](https://tailwindcss.com/docs/adding-custom-styles#arbitrary-properties) allows usage of a CSS property that Tailwind doesn't include as a utility out of the box. Use square bracket notation:
+
+```js
+<div class="[mask-type:luminance]">
+  <!-- ... -->
+</div>
+```
+
 ## Next.js Project Structure
 
 [Project Structure](https://nextjs.org/docs/getting-started/project-structure).
