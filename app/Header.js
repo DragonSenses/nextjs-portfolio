@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function Header() {
@@ -11,21 +12,21 @@ export default function Header() {
         '>Header</h1>
       <nav className='flex flex-col sm:flex-row justify-center items-center
         text-6xl sm:text-7xl gap-12 '>
-        <a href='#about-me' className='[text-decoration:inherit] [outline:none] [color:unset]'>
+        <Link href='#about-me' className='[text-decoration:inherit] [outline:none] [color:unset]'>
           <i className={`fa-solid fa-dragon nav-icons`}></i>
-        </a>
+        </Link>
 
-        <a href='#skills' className='[text-decoration:inherit] [outline:none] [color:unset]'>
+        <Link href='#skills' className='[text-decoration:inherit] [outline:none] [color:unset]'>
           <i className={`fa-solid fa-list-check nav-icons`}></i>
-        </a>
+        </Link>
 
-        <a href='#projects' className='[text-decoration:inherit] [outline:none] [color:unset]'>
+        <Link href='#projects' className='[text-decoration:inherit] [outline:none] [color:unset]'>
           <i className={`fa-solid fa-diagram-project nav-icons`}></i>
-        </a>
+        </Link>
 
-        <a href='#experience' className='[text-decoration:inherit] [outline:none] [color:unset]'>
+        <Link href='#experience' className='[text-decoration:inherit] [outline:none] [color:unset]'>
           <i className={`fa-solid fa-book-open nav-icons`}></i>
-        </a>
+        </Link>
 
       </nav>
     </header>
