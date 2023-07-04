@@ -220,3 +220,36 @@ What it looks like in global css
 ```
 
 Now going to replace the anchor tags with [Link](https://nextjs.org/docs/app/api-reference/components/link) to gain the benefits of prefetching and client-side navigation offerred by NextJS.
+
+## About component
+
+This will contain the Aboutme page.
+
+The structure so far:
+
+```js
+import React from 'react';
+import SectionIntro from './SectionIntro';
+
+export default function About() {
+  return (
+    <section id='about-me' className=''>
+      <div className=''>
+        <SectionIntro>ABOUT ME</SectionIntro>
+        <div className=''>This will contain content
+        
+        </div>
+
+        <div className=''>
+          <i className="fa-solid fa-dragon"></i>
+          <i className="fa-solid fa-dumbbell"></i>
+          <i className="fa-solid fa-book-open-reader"></i>
+          <i className="fa-solid fa-mug-hot"></i>
+        </div>
+      </div>
+    </section>
+  )
+}
+```
+
+I plan to make squares of info blocks in the content section.
