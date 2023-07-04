@@ -11,23 +11,19 @@ export default function Header() {
       <nav className='flex flex-col sm:flex-row justify-center items-center
         text-6xl sm:text-7xl gap-12 '>
         <a href='#about-me' className='[text-decoration:inherit] [outline:none] [color:unset]'>
-          <i className={`fa-solid fa-dragon duration-300 cursor-pointer 
-          hover:text-teal-400 hover:scale-110 hover:[text-shadow:_0.03em_0.03em_0_rgb(255_255_255)]`}></i>
+          <i className={`fa-solid fa-dragon nav-icons`}></i>
         </a>
 
         <a href='#skills' className='[text-decoration:inherit] [outline:none] [color:unset]'>
-          <i className={`fa-solid fa-list-check duration-300 cursor-pointer
-          hover:text-teal-400 hover:scale-110 hover:[text-shadow:_0.03em_0.03em_0_rgb(255_255_255)]`}></i>
+          <i className={`fa-solid fa-list-check nav-icons`}></i>
         </a>
 
         <a href='#projects' className='[text-decoration:inherit] [outline:none] [color:unset]'>
-          <i className={`fa-solid fa-diagram-project duration-300 cursor-pointer
-          hover:text-teal-400 hover:scale-110 hover:[text-shadow:_0.03em_0.03em_0_rgb(255_255_255)]`}></i>
+          <i className={`fa-solid fa-diagram-project nav-icons`}></i>
         </a>
 
         <a href='#experience' className='[text-decoration:inherit] [outline:none] [color:unset]'>
-          <i className={`fa-solid fa-book-open duration-300 cursor-pointer
-          hover:text-teal-400 hover:scale-110 hover:[text-shadow:_0.03em_0.03em_0_rgb(255_255_255)]`}></i>
+          <i className={`fa-solid fa-book-open nav-icons`}></i>
         </a>
 
       </nav>
