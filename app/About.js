@@ -3,11 +3,12 @@ import SectionIntro from './SectionIntro';
 
 export default function About() {
   return (
-    <section id='about-me' className=''>
-      <div className=''>
+    <section id='about-me' className='sm:text-6xl'>
+      <div className='w-11/12 max-w-full flex items-center flex-col'>
         <SectionIntro>ABOUT ME</SectionIntro>
-        <div className=''>This will contain content
-        
+        <div className='p-5 gap-5 grid text-center
+        [grid-template-columns:_repeat(1,_minMax(0,_1fr))]'>
+          This will contain content
         </div>
 
         <div className=''>
