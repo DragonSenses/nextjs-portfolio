@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.nav-icons {
+  @apply cursor-pointer duration-300 hover:text-teal-400 hover:scale-110 hover:[text-shadow:_0.03em_0.03em_0_rgb(255_255_255)]
+}
