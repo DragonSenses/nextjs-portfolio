@@ -252,6 +252,8 @@ export default function About() {
 }
 ```
 
+## AboutCard component
+
 I plan to make squares of info blocks in the content section. Going to name this component `AboutCard`.
 
 ```js
@@ -274,3 +276,73 @@ export default function AboutCard(props) {
   )
 }
 ```
+
+Update `SectionIntro`
+
+```js
+import React from 'react';
+
+export default function SectionIntro(props) {
+  const { children, dark } = props;
+  return (
+    <div className='w-full flex items-center gap-2.5 pt-10 pr-5 pb-2.5 pl-5'>
+      <div className={(dark) ?
+        'h-0 flex-1 bg-white':
+        'h-0 flex-1 bg-gray-900'}
+      >
+      </div>
+      <h1 className={(dark) ? 
+        'font-extrabold text-4xl sm:text-6xl [-webkit-text-stroke:_1.5px_white]':
+        'font-extrabold text-4xl sm:text-6xl [-webkit-text-stroke:_1.5px_#0f172a]'}>{children}</h1>
+      <div className={(dark) ?
+        'h-0 flex-1 bg-white':
+        'h-0 flex-1 bg-gray-900'}
+      >
+      </div>
+    </div>
+  )
+}
+```
+
+## Skills component
+
+Another section that will showcase skills: (WIP)
+
+```js
+import React from 'react';
+import SectionIntro from './SectionIntro';
+
+export default function Skills() {
+  return (
+    <section id='skills' className='sm:text-6xl'>
+      <SectionIntro dark={true}>SKILLS</SectionIntro>
+
+      <div className=''>
+
+      </div>
+    </section>
+  )
+}
+```
+
+## Projects component
+
+In `/app/Projects.js`, will showcase projects:
+
+```js
+import React from 'react';
+import SectionIntro from './SectionIntro';
+
+export default function Projects() {
+  return (
+    <section id='projects' className='sm:text-6xl'>
+      <SectionIntro>PROJECTS</SectionIntro>
+      <div className=''>
+
+      </div>
+    </section>
+  )
+}
+```
+
+Plan to do is an image overlay that hovers over each project. Also plan to separate projects by complexity.
