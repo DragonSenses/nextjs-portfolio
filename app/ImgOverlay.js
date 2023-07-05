@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function ImgOverlay(props) {
   const { imgSrc, description, title, githubLink, projectLink, children } = props;
@@ -16,8 +15,22 @@ export default function ImgOverlay(props) {
         <h2 className="font-medium underline">{title.toUpperCase()}</h2>
         <p className="">{children}</p>
         <div className="flex w-full items-center justify-around">
-          <Link></Link>
-          <Link></Link>
+          <a
+            className='cursor-pointer py-1 px-8 text-inherit bg-gray-900 
+            no-underline duration-300'
+            href={githubLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+          </a>
+          <a
+            className='cursor-pointer py-1 px-8 text-inherit bg-gray-900 
+            no-underline duration-300'
+            href={projectLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+          </a>
         </div>
       </div>
     </div>
