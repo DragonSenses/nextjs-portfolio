@@ -11,10 +11,11 @@ export default function ImgOverlay(props) {
         src={imgSrc}
         alt={description}
       />
-      <div className="overlay">
-        <h2 className="header"></h2>
-        <p className="para"></p>
-        <div className="links">
+      <div className="absolute opacity-0 duration-300 bg-gray-900 text-white
+      flex flex-col items-center justify-around p-5 inset-0">
+        <h2 className="font-medium underline">{title.toUpperCase()}</h2>
+        <p className="">{children}</p>
+        <div className="flex w-full items-center justify-around">
           <Link></Link>
           <Link></Link>
         </div>
