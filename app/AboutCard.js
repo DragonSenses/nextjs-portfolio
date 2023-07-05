@@ -4,13 +4,14 @@ export default function AboutCard(props) {
   const { children, heading } = props;
   
   return (
-    <div>
+    <div className='font-medium text-sm leading-5 p-2 border border-sky-500
+    sm:font-semibold sm:text-base sm:flex sm:flex-col'>
       AboutCard
-      <p>
-        {heading && 
-          <h3>heading</h3>
-        }
-        Content stuff inside
+      { heading && 
+        <h3 className='sm:p-2'>heading</h3>
+      }
+      <p className='sm:m-auto sm:p-1'>
+        {children}
       </p>
     </div>
   )

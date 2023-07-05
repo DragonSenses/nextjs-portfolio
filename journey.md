@@ -252,4 +252,25 @@ export default function About() {
 }
 ```
 
-I plan to make squares of info blocks in the content section.
+I plan to make squares of info blocks in the content section. Going to name this component `AboutCard`.
+
+```js
+import React from 'react';
+
+export default function AboutCard(props) {
+  const { children, heading } = props;
+  
+  return (
+    <div className='font-medium text-sm leading-5 p-2 border border-sky-500
+    sm:font-semibold sm:text-base sm:flex sm:flex-col'>
+      AboutCard
+      { heading && 
+        <h3 className='sm:p-8'>heading</h3>
+      }
+      <p className='sm:m-auto sm:p-1'>
+        {children}
+      </p>
+    </div>
+  )
+}
+```
