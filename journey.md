@@ -510,3 +510,21 @@ Returns a JSX element. section with `SectionIntro`. It will have another div con
 
 Each content will be a list item put inside a `ListEntry` component.
 
+```js
+import React from 'react';
+
+export default function ListEntry(props) {
+  const { title, date, children } = props;
+  return (
+    <div>
+      <div className='header'>
+        <h1 className='title'>{title}</h1>
+        <h1 className='date'>{date}</h1>
+      </div>
+      <ul className='ul'>
+        {children}
+      </ul>
+    </div>
+  )
+}
+```
