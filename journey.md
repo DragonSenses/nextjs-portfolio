@@ -489,3 +489,24 @@ export default function Projects() {
   )
 }
 ```
+
+## Experience Component
+
+```js
+import React from 'react';
+
+export default function Experience() {
+  return (
+    <section id="experience">
+      <div className=''>
+        <SectionIntro dark={true}>Experience</SectionIntro>
+      </div>
+    </section>
+  )
+}
+```
+
+Returns a JSX element. section with `SectionIntro`. It will have another div contained within that contains the content.
+
+Each content will be a list item put inside a `ListEntry` component.
+
