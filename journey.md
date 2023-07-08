@@ -682,10 +682,13 @@ export default function Footer() {
 
 Replace `styles.icon` and `styles.iconDark` with the prop utility classes in TailwindCSS.
 
+Also make sure to destructure out the `dark` from the props.
+
 ```js
 import React from 'react';
 
-export default function Footer() {
+export default function Footer(props) {
+  const { dark } = props;
   return (
     <footer className={(dark ? 
       "flex items-center justify-center gap-10 py-4 px-0 text-4xl sm:text-5xl bg-gray-900 text-white" : 
