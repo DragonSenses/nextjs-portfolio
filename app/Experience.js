@@ -1,5 +1,6 @@
 import React from 'react';
 import ListEntry from './ListEntry';
+import SectionIntro from './SectionIntro';
 
 export default function Experience() {
   return (
