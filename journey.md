@@ -558,3 +558,34 @@ export default function Experience() {
   )
 }
 ```
+
+## Footer Component
+
+```js
+import React from 'react';
+
+export default function Footer() {
+  return (
+    <div>
+      Footer
+    </div>
+  )
+}
+```
+
+Going to make a design decision of passing in a dark prop to determine whether the `Footer` is dark or light similar to `SectionIntro`. The reason for this is because we want to be able to conditionally render the Footer component depending on whether there are (2n) or (2n+1) sections/components in between. Whatever the case, in order to follow the same color scheme pattern for the sections we can easily adjust the footer to match. This means we can squeeze in any section/page with ease.
+
+```js
+import React from 'react';
+
+export default function Footer() {
+  return (
+    <footer className={(dark ? 
+      "flex items-center justify-center gap-10 py-4 px-0 text-4xl sm:text-5xl bg-gray-900 text-white" : 
+      "flex items-center justify-center gap-10 py-4 px-0 text-4xl sm:text-5xl bg-white text-gray-900"
+    )}>
+      Footer
+    </footer>
+  )
+}
+```
