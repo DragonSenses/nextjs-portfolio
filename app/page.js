@@ -2,6 +2,8 @@ import Header from './Header';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
+import Experience from './Experience';
+import Footer from './Footer';
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Experience />
+      <Footer dark={false}/>
     </main>
   )
 }
