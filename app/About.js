@@ -9,9 +9,7 @@ export default function About() {
 
         <SectionIntro>ABOUT ME</SectionIntro>
 
-        <div className='p-5 gap-5 grid text-center
-        [grid-template-columns:_repeat(1,_minMax(0,_1fr))]
-        sm:[grid-template-columns:_repeat(3,_minmax(0,_1fr))]'>
+        <div className='p-5 gap-5 grid text-center grid-cols-1 sm:grid-cols-3'>
           <AboutCard>I am strongly committed to the philosophy of <strong>life-long learning</strong> & stoicism.</AboutCard>
           <AboutCard>I am a <strong>Full Stack Developer</strong> with an ardent passion for all things
             Web Development, JavaScript and React.</AboutCard>
