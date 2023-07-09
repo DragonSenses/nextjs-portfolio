@@ -8,6 +8,8 @@ export default function ImgOverlay(props) {
       <Image 
         className='max-w-full'
         src={imgSrc}
+        width={1920}
+        height={1080}
         alt={description}
       />
       <div className="absolute opacity-0 hover:opacity-80 duration-300 bg-gray-900 
