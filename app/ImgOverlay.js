@@ -12,13 +12,13 @@ export default function ImgOverlay(props) {
         height={1080}
         alt={description}
       />
-      <div className="absolute opacity-0 hover:opacity-80 duration-300 bg-gray-900 
-      text-white flex flex-col items-center justify-around p-5 inset-0">
-        <h2 className="font-medium underline">{title.toUpperCase()}</h2>
-        <p className="">{children}</p>
+      <div className="absolute inset-0 opacity-0 hover:opacity-80 duration-300 bg-gray-900 
+      text-white flex flex-col items-center justify-around p-5">
+        <h2 className="font-semibold underline text-2xl">{title.toUpperCase()}</h2>
+        <p className="text-lg">{children}</p>
         <div className="flex w-full items-center justify-around">
           <a
-            className='cursor-pointer py-1 px-8 text-inherit bg-gray-900 
+            className='cursor-pointer py-1 px-8 text-inherit bg-gray-900 flex
             no-underline duration-300 hover:text-gray-900 hover:bg-white'
             href={githubLink}
             target="_blank"
@@ -27,7 +27,7 @@ export default function ImgOverlay(props) {
             <i className={`fa-brands fa-github text-3xl`}></i>
           </a>
           <a
-            className='cursor-pointer py-1 px-8 text-inherit bg-gray-900 
+            className='cursor-pointer py-1 px-8 text-inherit bg-gray-900 text-xl
             no-underline duration-300 hover:text-gray-900 hover:bg-white'
             href={projectLink}
             target="_blank"
