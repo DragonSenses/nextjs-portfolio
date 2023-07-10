@@ -489,11 +489,11 @@ export default function ImgOverlay(props) {
       />
       <div className="absolute inset-0 opacity-0 hover:opacity-80 duration-300 bg-gray-900 
       text-white flex flex-col items-center justify-around p-5">
-        <h2 className="font-semibold underline text-2xl">{title.toUpperCase()}</h2>
-        <p className="text-lg">{children}</p>
+        <h2 className="font-medium sm:font-semibold underline text-lg sm:text-2xl">{title.toUpperCase()}</h2>
+        <p className="text-base sm:text-lg">{children}</p>
         <div className="flex w-full items-center justify-around">
           <a
-            className='cursor-pointer py-1 px-8 text-inherit bg-gray-900 flex
+            className='cursor-pointer py-1 px-8 text-inherit bg-gray-900 sm:flex
             no-underline duration-300 hover:text-gray-900 hover:bg-white'
             href={githubLink}
             target="_blank"
@@ -502,7 +502,7 @@ export default function ImgOverlay(props) {
             <i className={`fa-brands fa-github text-3xl`}></i>
           </a>
           <a
-            className='cursor-pointer py-1 px-8 text-inherit bg-gray-900 text-xl
+            className='cursor-pointer py-1 px-8 text-inherit bg-gray-900 sm:text-xl
             no-underline duration-300 hover:text-gray-900 hover:bg-white'
             href={projectLink}
             target="_blank"
@@ -515,6 +515,7 @@ export default function ImgOverlay(props) {
     </div>
   )
 }
+
 ```
 
 Now to use `ImgOverlay` component in `Projects` section.
