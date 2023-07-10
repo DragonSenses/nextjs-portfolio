@@ -7,7 +7,7 @@ export default function AboutCard(props) {
     <div className='font-medium text-sm leading-5 p-2 border border-sky-500
     sm:font-semibold sm:text-base sm:flex sm:flex-col'>
       { heading && 
-        <h3 className='font-semibold sm:p-2'>{heading}</h3>
+        <h3 className='font-black sm:p-2'>{heading}</h3>
       }
       <p className='sm:m-auto sm:p-1'>
         {children}
