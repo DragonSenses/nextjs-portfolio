@@ -25,7 +25,7 @@ export default function About() {
           <AboutCard heading='Hobbies'>Working out, reading/writing, and drinking green tea.</AboutCard>
         </div>
 
-        <div className='flex items-center text-3xl gap-8 pt-10 pb-0 sm:text-5xl sm:gap-16'>
+        <div className='flex items-center text-3xl gap-8 pt-2 sm:pt-10 pb-4 sm:pb-0 sm:text-5xl sm:gap-16'>
           <i className="fa-solid fa-dragon"></i>
           <i className="fa-solid fa-dumbbell"></i>
           <i className="fa-solid fa-book-open-reader"></i>
